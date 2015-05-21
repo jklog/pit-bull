@@ -32,12 +32,29 @@
         <span class="form-bar"></span>
         <label class="float-label" for="exampleInputEmail1">Input field with float label</label>
       </div>
+
       <div class="form-group">  
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Placeholder">
         <span class="form-highlight"></span>
         <span class="form-bar"></span>
         <label for="exampleInputPassword1">Static label</label>        
       </div>
+
+      <div class="form-group">  
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Placeholder">
+        <span class="form-highlight"></span>
+        <span class="form-bar"></span>
+        <label for="exampleInputPassword1">Static label</label>        
+      </div>
+      
+      <div class="form-group">  
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Placeholder">
+        <span class="form-highlight"></span>
+        <span class="form-bar"></span>
+        <label for="exampleInputPassword1">Static label</label>        
+      </div>
+
+
       <div class="form-group">      
         <input class="form-control" type="file" id="exampleInputFile">
         <label for="exampleInputFile">File input</label>
@@ -125,49 +142,16 @@
 
   <h2 id="forms-controls">Supported controls</h2>
 
-  <h3>Checkboxes and radios</h3>
-  
-  <div class="zero-clipboard"></div><div class="bs-example">
-    <form role="form">
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">
-          Option one is this and that—be sure to include why it's great
-        </label>
-      </div>
-      <div class="checkbox disabled">
-        <label>
-          <input type="checkbox" value="" disabled="">
-          Option two is disabled
-        </label>
-      </div>
-      <br>
-      <div class="radio">
-        <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-          Option one is this and that—be sure to include why it's great
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          Option two can be something else and selecting it will deselect option one
-        </label>
-      </div>
-      <div class="radio disabled">
-        <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
-          Option three is disabled
-        </label>
-      </div>
-    </form>
-  </div>
+
 
 
   <h3>Selects</h3>
   <div class="zero-clipboard"></div><div class="bs-example">
     <form role="form">
 
+    <div class="row">  <!-- begin row 1 -->
+      <div class="col-xs-6">
+      <input type="text" class="form-control" placeholder="Barcode Type">
       <select class="form-control">
         <option>-- Select One Barcode Type --</option>
         <option>2_OF_5</option>
@@ -212,8 +196,11 @@
         <option>UPC-A</option>
         <option>UPC-E</option>
         <option>UPC-SCS</option>
-      </select>
+    </select>
+    </div>
 
+      <div class="col-xs-6">
+      <input type="text" class="form-control" placeholder="Printer Name">
       <select class="form-control">
         <option>-- Select One Printer --</option>
         <option>(PCA)  Keystone - LITHO</option>
@@ -388,7 +375,14 @@
         <option>WSP International Limited</option>
         <option>Xela Pack, Inc</option>
       </select>
+    </div>
+    <!-- end row 1 -->
+</div>
 
+
+    <div class="row">  <!-- begin row 2 -->
+      <div class="col-xs-6">
+      <input type="text" class="form-control" placeholder="Final Format">
       <select class="form-control">
         <option>-- Select One Final Format --</option>
         <option>Adobe PDF</option>     
@@ -397,7 +391,10 @@
         <option>Outlined Illustrator</option>
         <option>Overwrite-Normalized PDF</option>
       </select>
+      </div>
 
+      <div class="col-xs-6">
+      <input type="text" class="form-control" placeholder="Hot Folder">
       <select class="form-control">
         <option>-- Select One Hot Folder --</option> 
         <option>7900-AFS PET pbg</option>
@@ -577,6 +574,9 @@
         <option>9900-Torham SBS pbg</option>
         <option>9900-Utah Paper Box - GRACoL</option>
       </select>
+      </div>
+    </div> <!-- end row 2 -->
+
 
     <div class="row">  <!-- begin row 3 -->
       <div class="col-xs-4">
@@ -587,22 +587,22 @@
       </select>
     </div>
 
-  <div class="col-xs-4">
-    <input type="text" class="form-control" placeholder="Engraver">
-      <select class="form-control">
-        <option>-- Select One Engraver --</option>      
-        <option>Albaad</option>
-        <option>American Fuji</option>
-        <option>Cosmolab</option>
-        <option>Imprimatur - Nypro Packaging</option>
-        <option>Jaly</option>
-        <option>Maxim Flexpac</option>
-        <option>MCC</option>
-        <option>Multicolor-Scottsburg</option>
-        <option>Vins Packaging</option>
-        <option>WRE</option>
-      </select>
-  </div>
+    <div class="col-xs-4">
+      <input type="text" class="form-control" placeholder="Engraver">
+        <select class="form-control">
+          <option>-- Select One Engraver --</option>      
+          <option>Albaad</option>
+          <option>American Fuji</option>
+          <option>Cosmolab</option>
+          <option>Imprimatur - Nypro Packaging</option>
+          <option>Jaly</option>
+          <option>Maxim Flexpac</option>
+          <option>MCC</option>
+          <option>Multicolor-Scottsburg</option>
+          <option>Vins Packaging</option>
+          <option>WRE</option>
+        </select>
+    </div>
 
       <div class="col-xs-4">
       <input type="text" class="form-control" placeholder="Print Method">
@@ -623,34 +623,8 @@
 
     </form>
   </div>
-  
-  <h3>Column sizing</h3>
-  <div class="zero-clipboard"></div><div class="bs-example">
-    <form role="form">
-      <div class="row">
-      
-        <div class="col-xs-2">
-          <input type="text" class="form-control" placeholder=".col-xs-2">
-        </div>
-        <div class="col-xs-3">
-          <input type="text" class="form-control" placeholder=".col-xs-3">
-        </div>
-        <div class="col-xs-4">
-          <input type="text" class="form-control" placeholder=".col-xs-4">
-        </div>
-      </div>
-    </form>
-  </div>
-
-  <div class="input-group">         
-    <input id="exampleInputEmailAddon" class="form-control" type="email" required >
-    <span class="form-highlight"></span>
-    <span class="form-bar"></span>
-    <label class="float-label" for="exampleInputEmailAddon">Float label with addon</label>
-  </div>
-
-
-
+<br>
+<br>
   
 </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
