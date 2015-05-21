@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 
 
-    <title>Bootstrap Material Design - Forms (in Progress)</title>
+    <title>Pitbull</title>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 
 
@@ -14,21 +14,17 @@
     <link rel='stylesheet prefetch' href='css/gubja.css'>
 
         <link rel="stylesheet" href="css/style.css">
-
-    
-    
-    
   </head>
 
   <body>
+<div class="container">
 
-    <div class="container">
 <div class="bs-docs-section">
   <h1 id="forms" class="page-header">Material Forms</h1>
 
   <h2 id="forms-example">Basic example</h2>
-  <p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing. Label should be after INPUT!!!</p>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
+  
+  <div class="zero-clipboard"></div><div class="bs-example">
     <form role="form">
       <div class="form-group">
         <input type="email" class="form-control" id="exampleInputEmail1" required>
@@ -53,45 +49,13 @@
       </div>
       <button type="submit" class="btn btn-raised btn-default ripple-effect">Submit</button>
     </form>
-  </div><!-- /example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail1"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputPassword1"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputPassword1"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputFile"</span><span class="nt">&gt;</span>File input<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">id=</span><span class="s">"exampleInputFile"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>Example block-level help text here.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Check me out
-    <span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/form&gt;</span></code></pre></div>
-    <div class="bs-callout bs-callout-warning">
-      <h4>Don't mix form groups with input groups</h4>
-      <p>Do not mix form groups directly with <a href="/components/#input-groups">input groups</a>. Instead, nest the input group inside of the form group.</p>
-    </div>
+  </div>
+  </div>
 
 
   <h2 id="forms-inline">Inline form</h2>
-  <p>Add <code>.form-inline</code> to your <code>&lt;form&gt;</code> for left-aligned and inline-block controls. <strong>This only applies to forms within viewports that are at least 768px wide.</strong></p>
-  <div class="bs-callout bs-callout-danger">
-    <h4>Requires custom widths</h4>
-    <p>Inputs, selects, and textareas are 100% wide by default in Bootstrap. To use the inline form, you'll have to set a width on the form controls used within.</p>
-  </div>
-  <div class="bs-callout bs-callout-warning">
-    <h4>Always add labels</h4>
-    <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the <code>.sr-only</code> class.</p>
-  </div>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
+
+  <div class="zero-clipboard"></div><div class="bs-example">
     <form class="form-inline" role="form">
       <div class="form-group">        
         <input type="email" class="form-control" id="exampleInputEmail2" required>
@@ -122,34 +86,10 @@
         <button type="submit" class="btn btn-flat btn-info ripple-effect">Sign in</button>
       </div>
     </form>
-  </div><!-- /example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"exampleInputEmail2"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail2"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>@<span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"exampleInputPassword2"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputPassword2"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Remember me
-    <span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/form&gt;</span></code></pre></div>
-
+  </div>
 
   <h2 id="forms-horizontal">Horizontal form</h2>
-  <p>Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding <code>.form-horizontal</code> to the form. Doing so changes <code>.form-group</code>s to behave as grid rows, so no need for <code>.row</code>.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
+  <div class="zero-clipboard"></div><div class="bs-example">
     <form class="form-horizontal" role="form">
       <div class="form-group">
         <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
@@ -181,71 +121,13 @@
         </div>
       </div>
     </form>
-  </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-horizontal"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputEmail3"</span> <span class="na">class=</span><span class="s">"col-sm-2 control-label"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputEmail3"</span> <span class="na">placeholder=</span><span class="s">"Email"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputPassword3"</span> <span class="na">class=</span><span class="s">"col-sm-2 control-label"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputPassword3"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-offset-2 col-sm-10"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label&gt;</span>
-          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Remember me
-        <span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-offset-2 col-sm-10"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/form&gt;</span></code></pre></div>
-
+  </div>
 
   <h2 id="forms-controls">Supported controls</h2>
-  <p>Examples of standard form controls supported in an example form layout.</p>
-
-  <h3>Inputs</h3>
-  <p>Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.</p>
-  <div class="bs-callout bs-callout-danger">
-    <h4>Type declaration required</h4>
-    <p>Inputs will only be fully styled if their <code>type</code> is properly declared.</p>
-  </div>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
-    <form role="form">
-      <input type="text" class="form-control" placeholder="Text input">
-    </form>
-  </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Text input"</span><span class="nt">&gt;</span></code></pre></div>
-  <div class="bs-callout bs-callout-info">
-    <h4>Input groups</h4>
-    <p>To add integrated text or buttons before and/or after any text-based <code>&lt;input&gt;</code>, <a href="../components/#input-groups">check out the input group component</a>.</p>
-  </div>
-
-  <h3>Textarea</h3>
-  <p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
-    <form role="form">
-      <textarea class="form-control" rows="3"></textarea>
-    </form>
-  </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">rows=</span><span class="s">"3"</span><span class="nt">&gt;&lt;/textarea&gt;</span></code></pre></div>
 
   <h3>Checkboxes and radios</h3>
-  <p>Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
-  <p>A checkbox or radio with the <code>disabled</code> attribute will be styled appropriately. To have the <code>&lt;label&gt;</code> for the checkbox or radio also display a "not-allowed" cursor when the user hovers over the label, add the <code>.disabled</code> class to your <code>.radio</code>, <code>.radio-inline</code>, <code>.checkbox</code>, <code>.checkbox-inline</code>, or <code>&lt;fieldset&gt;</code>.</p>
-  <h4>Default (stacked)</h4>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
+  
+  <div class="zero-clipboard"></div><div class="bs-example">
     <form role="form">
       <div class="checkbox">
         <label>
@@ -279,490 +161,474 @@
         </label>
       </div>
     </form>
-  </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
-    Option one is this and that<span class="ni">&amp;mdash;</span>be sure to include why it's great
-  <span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox disabled"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">disabled</span><span class="nt">&gt;</span>
-    Option two is disabled
-  <span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+  </div>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optionsRadios"</span> <span class="na">id=</span><span class="s">"optionsRadios1"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    Option one is this and that<span class="ni">&amp;mdash;</span>be sure to include why it's great
-  <span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optionsRadios"</span> <span class="na">id=</span><span class="s">"optionsRadios2"</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span>
-    Option two can be something else and selecting it will deselect option one
-  <span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio disabled"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optionsRadios"</span> <span class="na">id=</span><span class="s">"optionsRadios3"</span> <span class="na">value=</span><span class="s">"option3"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
-    Option three is disabled
-  <span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-
-  <h4>Inline checkboxes and radios</h4>
-  <p>Use the <code>.checkbox-inline</code> or <code>.radio-inline</code> classes on a series of checkboxes or radios for controls that appear on the same line.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
-    <form role="form">
-      <label class="checkbox-inline">
-        <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
-      </label>
-      <label class="checkbox-inline">
-        <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
-      </label>
-      <label class="checkbox-inline">
-        <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
-      </label>
-    </form>
-    <br>
-    <form role="form">
-      <label class="radio-inline">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
-      </label>
-      <label class="radio-inline">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
-      </label>
-      <label class="radio-inline">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
-      </label>
-    </form>
-  </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox1"</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span> 1
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox2"</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span> 2
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox3"</span> <span class="na">value=</span><span class="s">"option3"</span><span class="nt">&gt;</span> 3
-<span class="nt">&lt;/label&gt;</span>
-
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"inlineRadioOptions"</span> <span class="na">id=</span><span class="s">"inlineRadio1"</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span> 1
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"inlineRadioOptions"</span> <span class="na">id=</span><span class="s">"inlineRadio2"</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span> 2
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"inlineRadioOptions"</span> <span class="na">id=</span><span class="s">"inlineRadio3"</span> <span class="na">value=</span><span class="s">"option3"</span><span class="nt">&gt;</span> 3
-<span class="nt">&lt;/label&gt;</span></code></pre></div>
 
   <h3>Selects</h3>
-  <p>Use the default option, or add <code>multiple</code> to show multiple options at once.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
+  <div class="zero-clipboard"></div><div class="bs-example">
     <form role="form">
+
       <select class="form-control">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
+        <option>-- Select One Barcode Type --</option>
+        <option>2_OF_5</option>
+        <option>BOBST</option>
+        <option>CLF-8</option>
+        <option>CODABAR</option>
+        <option>CODE-128</option>
+        <option>CODE-39</option>
+        <option>CODE39_EXTENDED</option>
+        <option>DATAMATRIX</option>
+        <option>EAN-13</option>
+        <option>EAN-8</option>
+        <option>GS1-128</option>
+        <option>GS1_DATABAR-OMNIDIRECTIONAL</option>
+        <option>GS1_DATABAR-EXPANDED</option>
+        <option>GS1_DATABAR-EXPANDED_STACKED</option>
+        <option>GS1_DATABAR_LIMITED</option>
+        <option>GS1_DATABAR_STACKED</option>
+        <option>GS1_DATABAR_STACKED_OMNIDIRECTIONAL</option>
+        <option>GS1_DATABAR_TRUNCATED</option>
+        <option>GS1_DATAMATRIX</option>
+        <option>GS1_US-COUPON-INTERIM</option>
+        <option>HIBC-39</option>
+        <option>HIBC-128</option>
+        <option>ITF-14</option>
+        <option>ITF-16</option>
+        <option>INT_2_of_5</option>
+        <option>KURANDT</option>
+        <option>LAETUS_PHARMA</option>
+        <option>MS_7</option>
+        <option>MSI</option>
+        <option>MARKS_AND_SPENCER</option>
+        <option>NDC_HRI</option>
+        <option>PDF417</option>
+        <option>MicroPDF417</option>
+        <option>PLESSEY</option>
+        <option>PZN</option>
+        <option>PZN8</option>
+        <option>PARAF_ITALY</option>
+        <option>QR</option>
+        <option>MicroQR</option>
+        <option>UPC-A</option>
+        <option>UPC-E</option>
+        <option>UPC-SCS</option>
       </select>
-      <br>
-      <select multiple="" class="form-control">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
+
+      <select class="form-control">
+        <option>-- Select One Printer --</option>
+        <option>(PCA)  Keystone - LITHO</option>
+        <option>3C (Burt's Vendor)</option>
+        <option>Accord Carton</option>
+        <option>Acorn</option>
+        <option>Acupac</option>
+        <option>Advertising</option>
+        <option>Albaad</option>
+        <option>Albaad (Sourced to CLP)</option>
+        <option>Albaad (Sourced to Kendall)</option>
+        <option>Albaad (Sourced to LTI)</option>
+        <option>Albaad (Sourced to Rock Tenn Mar</option>
+        <option>Albaad (Sourced to Tadbik)</option>
+        <option>Alcan-Flexo</option>
+        <option>American Fuji Seal</option>
+        <option>American Litho & Packaging</option>
+        <option>American Packaging</option>
+        <option>Americraft [Pratt Vendor]</option>
+        <option>Ampac</option>
+        <option>Antopack - Antoniou S.A.</option>
+        <option>Arcade Marketing</option>
+        <option>AROMATE Industries Co., Ltd</option>
+        <option>Atlantic Printing & Graphics</option>
+        <option>Autumn Harp (Sourced to Info Lab</option>
+        <option>Belmark</option>
+        <option>Bemis</option>
+        <option>Bemis - Joplin, MO Gravure</option>
+        <option>Bemis (Milprint)</option>
+        <option>Bemis Terre Haute</option>
+        <option>Berlin Packaging</option>
+        <option>Berry Plastics</option>
+        <option>Bravis</option>
+        <option>Cadmus</option>
+        <option>CardPak</option>
+        <option>CCL Label</option>
+        <option>CCL Label (Digital)</option>
+        <option>CCL Tube LA</option>
+        <option>CCL Tube PA</option>
+        <option>Cello Pack</option>
+        <option>Cenveo</option>
+        <option>Chinese Gravure Printer</option>
+        <option>Color Box (CBX-Indiana)</option>
+        <option>Color Ink</option>
+        <option>Consolidated Bottle</option>
+        <option>Cosmolab</option>
+        <option>Coveris</option>
+        <option>Coveris (Exopack)</option>
+        <option>CPG</option>
+        <option>CPP Global</option>
+        <option>Custom Label</option>
+        <option>Digital Color Inc</option>
+        <option>Exopack, LLC</option>
+        <option>Fort Dearborn Company</option>
+        <option>Fort Dearborn Company - Litho Hi</option>
+        <option>Fort Dearborn- King of Prussia</option>
+        <option>Georgia Pacific (Menasha)</option>
+        <option>Gibraltar Packaging (Nebraska)</option>
+        <option>Glenroy, Inc.</option>
+        <option>Gould-CCP (Cadmus)</option>
+        <option>Graphic Packaging - WRE</option>
+        <option>Graphic Packaging International</option>
+        <option>Green Bay Packaging</option>
+        <option>Guedikian Company</option>
+        <option>Harbor Industries</option>
+        <option>Haso</option>
+        <option>Hayco Manufacturing Ltd.</option>
+        <option>HFM / AMPAC</option>
+        <option>HFM Packaging</option>
+        <option>Hogue Printing Solutions</option>
+        <option>Hood Packaging</option>
+        <option>Hooven Dayton</option>
+        <option>Identigraphics</option>
+        <option>IDM - Nypro Packaging</option>
+        <option>Imprimatur - Nypro Packaging</option>
+        <option>IMT</option>
+        <option>Inesa Argentina S.A.</option>
+        <option>Inland</option>
+        <option>Innerworkings</option>
+        <option>International Paper</option>
+        <option>IntraPac</option>
+        <option>IPL Plastics / Usine Edmundston</option>
+        <option>Jaly (AA China Printer)</option>
+        <option>Jansy</option>
+        <option>Jet Printing</option>
+        <option>JL Clark</option>
+        <option>John Sands & Associates</option>
+        <option>Kendall</option>
+        <option>King Pac Industrial</option>
+        <option>Kleen Test Products</option>
+        <option>Label Concepts, Corp</option>
+        <option>Label Tech</option>
+        <option>Labelworx</option>
+        <option>Litho Press (Pratt Vendor)</option>
+        <option>Lock & Lock</option>
+        <option>LTI - Labels, Tags and Inserts</option>
+        <option>Maverick Enterprises (WRE)</option>
+        <option>Maxim Flexpac</option>
+        <option>MCC</option>
+        <option>Mcc Label</option>
+        <option>MENASHA PACKAGING COMPANY, LLC</option>
+        <option>Meredith-Webb</option>
+        <option>Metro</option>
+        <option>Mid Atlantic</option>
+        <option>Milprint, Inc.</option>
+        <option>Model Graphics</option>
+        <option>MOD-PAC Corp</option>
+        <option>MRI Flexible Packaging</option>
+        <option>Multibax</option>
+        <option>Multicolor-Scottsburg</option>
+        <option>Neff Packaging</option>
+        <option>Niven Marketing</option>
+        <option>Nordenia</option>
+        <option>Norka Incorporated</option>
+        <option>Pack America</option>
+        <option>Packaging Corporation of America</option>
+        <option>Packaging Personified, Inc.</option>
+        <option>Paperworks</option>
+        <option>Paperworks-Rampage</option>
+        <option>Papreworks-Flexo</option>
+        <option>PBM Graphics</option>
+        <option>Plastic Packaging</option>
+        <option>Platinum Press</option>
+        <option>Polywell (China)</option>
+        <option>Pratt (Sourced to Neff)</option>
+        <option>Pratt Displays</option>
+        <option>Prime Label & Screen (Berry)</option>
+        <option>Prime Package & Label, LLC</option>
+        <option>Printpack</option>
+        <option>Process Labels (KLEEN)</option>
+        <option>Proteus</option>
+        <option>Robbie Fantastico</option>
+        <option>Rock Tenn</option>
+        <option>Rock Tenn - CCNB</option>
+        <option>Rock Tenn - Marion</option>
+        <option>Rock Tenn - SBS</option>
+        <option>Rohrer Corporation</option>
+        <option>Roplast Industries, Inc.</option>
+        <option>Rosmar Packaging Corp. - Inter P</option>
+        <option>RPG-Regency</option>
+        <option>Ryan Scott Displays</option>
+        <option>Salem</option>
+        <option>Sheboygan Paper Box</option>
+        <option>Silgan Plastics</option>
+        <option>SleeveCo, Inc.</option>
+        <option>Smurfit-MBI</option>
+        <option>SMYTH</option>
+        <option>Smyth-Litho Paper</option>
+        <option>Sonoco Flexible Packaging</option>
+        <option>Specialized Packaging London</option>
+        <option>Specialized Packaging Radisson</option>
+        <option>SPG Gravure</option>
+        <option>Standard Printing</option>
+        <option>Star Packaging</option>
+        <option>Stuart Packaging Inc</option>
+        <option>SWOP</option>
+        <option>Technipaq, Inc.</option>
+        <option>Tecnocap, LLC</option>
+        <option>The Central Group</option>
+        <option>The Robinette Company</option>
+        <option>The Strive Group</option>
+        <option>Torham  Hamilton Paper Box Inc.</option>
+        <option>Treatment Products, Ltd.</option>
+        <option>Trinity Plastics</option>
+        <option>Tri-Pro</option>
+        <option>Utah Paper Box</option>
+        <option>Vins Packaging</option>
+        <option>VivaCan</option>
+        <option>Wausau Container</option>
+        <option>Web-Tech Packaging</option>
+        <option>WS Packaging Group</option>
+        <option>WSP International Limited</option>
+        <option>Xela Pack, Inc</option>
       </select>
-    </form>
-  </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span>
 
-<span class="nt">&lt;select</span> <span class="na">multiple</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span></code></pre></div>
+      <select class="form-control">
+        <option>-- Select One Final Format --</option>
+        <option>Adobe PDF</option>     
+        <option>EPS</option>
+        <option>Normalized PDF</option>
+        <option>Outlined Illustrator</option>
+        <option>Overwrite-Normalized PDF</option>
+      </select>
 
+      <select class="form-control">
+        <option>-- Select One Hot Folder --</option> 
+        <option>7900-AFS PET pbg</option>
+        <option>7900-Alcan Mpls Wht Foil</option>
+        <option>7900-Ampac Gravure-SIM</option>
+        <option>7900-A-Print CCNB</option>
+        <option>7900-A-Print GRACoL</option>
+        <option>7900-Atlantic Gloss</option>
+        <option>7900-Atlantic Matte</option>
+        <option>7900-Belmark</option>
+        <option>7900-Belmark-CMYK_FHD</option>
+        <option>7900-Bemis Flexo SDP</option>
+        <option>7900-Bemis Flexo-New London</option>
+        <option>7900-Bemis Gravure-Joplin</option>
+        <option>7900-Berry Plastics</option>
+        <option>7900-Berry Plastics SDP</option>
+        <option>7900-Cardpack</option>
+        <option>7900-CCL Label</option>
+        <option>7900-CCL Tube (GRACoL) SDP</option>
+        <option>7900-CCL Tube (GRACoL) SDP-2</option>
+        <option>7900-Cello Pack SPD</option>
+        <option>7900-Color Ink (GRACoL)</option>
+        <option>7900-Corandes (Metal Offset)</option>
+        <option>7900-CUSTLBL Digital 75</option>
+        <option>7900-dielines</option>
+        <option>7900-FDC Conventional-1</option>
+        <option>7900-FDC King of Prussia</option>
+        <option>7900-FDC Paper HiFi-ICC-pbg</option>
+        <option>7900-FDC Synth HiFi-ICC-v2</option>
+        <option>7900-Gibraltar PKG</option>
+        <option>7900-Glenroy (Acupac)</option>
+        <option>7900-Gould-CCP (Cadmus)</option>
+        <option>7900-GRACoL</option>
+        <option>7900-GRACoL pbg-loose color</option>
+        <option>7900-GRAPKG Gravure</option>
+        <option>7900-Hogue</option>
+        <option>7900-Hooven-Dayton</option>
+        <option>7900-IdentiGraphics</option>
+        <option>7900-IMT</option>
+        <option>7900-Inland #60</option>
+        <option>7900-Inland #80</option>
+        <option>7900-Inland 7cp Paper</option>
+        <option>7900-Inland 7cp Synthetic</option>
+        <option>7900-Inland Flexo Lam SDP</option>
+        <option>7900-IPL</option>
+        <option>7900-Jet Printing</option>
+        <option>7900-KLEEN-Process Labels</option>
+        <option>7900-LabelTech</option>
+        <option>7900-LabelTech-Film</option>
+        <option>7900-LTI-Film</option>
+        <option>7900-LTI-Paper</option>
+        <option>7900-Maverick Ent (WRE) SDP</option>
+        <option>7900-Maxim Flexpac Gravure</option>
+        <option>7900-MCC Gravure</option>
+        <option>7900-MCC Heat Transfers</option>
+        <option>7900-MCC Paper_v1</option>
+        <option>7900-MCC Synth</option>
+        <option>7900-Meredith-Webb (Burts)</option>
+        <option>7900-Mid Atlantic (Burts Vendor)</option>
+        <option>7900-MRI Flexo</option>
+        <option>7900-Multi BAX</option>
+        <option>7900-Neff CCNB</option>
+        <option>7900-Neff CCNB (flt)</option>
+        <option>7900-Norka</option>
+        <option>7900-PCA Gravure</option>
+        <option>7900-Plastic Packaging</option>
+        <option>7900-Pratt-Americraft pbg</option>
+        <option>7900-Pratt-Lewisburg pbg</option>
+        <option>7900-Print Pack PET</option>
+        <option>7900-Proteus_SBS_Sim</option>
+        <option>7900-Rosmar-Interpack</option>
+        <option>7900-RPG-Grand Litho</option>
+        <option>7900-RPG-Regency</option>
+        <option>7900-RPG-Unicmac</option>
+        <option>7900-RT CCNB</option>
+        <option>7900-RT Marion- Burts Bees</option>
+        <option>7900-RT SBS pbg</option>
+        <option>7900-RT SUS</option>
+        <option>7900-Salem</option>
+        <option>7900-ScreenDot Plus</option>
+        <option>7900-SGS OPS Harmony</option>
+        <option>7900-Silgan (GRACoL) SDP</option>
+        <option>7900-Silgan (GRACoL) SDP-no sim</option>
+        <option>7900-SleeveCo-LatranClrFilm</option>
+        <option>7900-SMY BOP VRN SDP</option>
+        <option>7900-SMY C1S_ACE_MA</option>
+        <option>7900-SMY C1S_SW_ACE_MA</option>
+        <option>7900-SMY CFILM_SWHT_G</option>
+        <option>7900-SMY CMYK Digital-2</option>
+        <option>7900-SMY COMCO WHT BOP VARN SDP</option>
+        <option>7900-SMY Flexo Paper Lam</option>
+        <option>7900-SMY GUNZE T HD (Shrink)</option>
+        <option>7900-SMY Litho C1S (V2)</option>
+        <option>7900-SMY Litho IML Film</option>
+        <option>7900-SMY Litho IML Paper</option>
+        <option>7900-SMY OPS</option>
+        <option>7900-SMY RAFLA_PRIME_MA (Shrink)</option>
+        <option>7900-SMY SG_PAP_G</option>
+        <option>7900-SMY SG_PAP_UV_G</option>
+        <option>7900-SMY Shrink with OB</option>
+        <option>7900-SMY Water Based Flexo</option>
+        <option>7900-SMY WHT BOP G SDP</option>
+        <option>7900-SMY WHT GOLD VARN SDP</option>
+        <option>7900-SMY WHT_FIM_MAT_C</option>
+        <option>7900-Sonoco Flexo Dot (GRACoL)</option>
+        <option>7900-Sonoco Gravure pbg</option>
+        <option>7900-Sonoco Gravure Waco w_o Whi</option>
+        <option>7900-Strive-Offset</option>
+        <option>7900-Stuart Packaging</option>
+        <option>7900-SWOP</option>
+        <option>7900-Torham CCNB</option>
+        <option>7900-Tri Pro-Shrink SDP</option>
+        <option>7900-Vins Packaging</option>
+        <option>7900-VivaCan</option>
+        <option>7900-Wausau Pkg SBS</option>
+        <option>7900-Web-Tech</option>
+        <option>7900-WS Litho #70 C1S</option>
+        <option>7900-WS Pkg Clear Film</option>
+        <option>7900-WS Pkg PromoPrismVarnish</option>
+        <option>7900-WS Pkg SG Paper</option>
+        <option>7900-WS Pkg Wht Film</option>
+        <option>7900-WS Pkg Wht Film SDP</option>
+        <option>7900-WS_Semigloss_Varnish</option>
+        <option>7900-WSP Intl LTD</option>
+        <option>7900-Xela Pack (Burts Vendor)</option>
+        <option>7900-Xela Pack SDP (Burts)</option>
+        <option>9900-ACCORD</option>
+        <option>9900-AFS OPS</option>
+        <option>9900-A-Print CCNB</option>
+        <option>9900-A-Print GRACoL</option>
+        <option>9900-Bemis Terre Haute</option>
+        <option>9900-Bemis Terre Haute SDP</option>
+        <option>9900-Exopack (GRACoL)</option>
+        <option>9900-FOGRA</option>
+        <option>9900-Georgia Pacific (Menasha)</option>
+        <option>9900-Gibraltar PKG</option>
+        <option>9900-GPI CRB</option>
+        <option>9900-GPI SBS</option>
+        <option>9900-GPI Screendot Plus</option>
+        <option>9900-GPI Screendot Plus_v2</option>
+        <option>9900-GRACoL pbg</option>
+        <option>9900-GRACoL pbg-loose color</option>
+        <option>9900-GRAPH PKG Litho</option>
+        <option>9900-GRAPH PKG-Flexo</option>
+        <option>9900-Hayco CCNB</option>
+        <option>9900-Hayco SBS</option>
+        <option>9900-Hayco Vendor S-CCNB B</option>
+        <option>9900-Hayco Vendor V-CCNB A</option>
+        <option>9900-Hood-Press</option>
+        <option>9900-Imprimatur</option>
+        <option>9900-Kendall</option>
+        <option>9900-Menasha Preprint Kemi Sun</option>
+        <option>9900-Menasha Preprint Kemi Sun I</option>
+        <option>9900-MODPAC CCN</option>
+        <option>9900-NORD 2201 LW</option>
+        <option>9900-NyPro Gravure</option>
+        <option>9900-OEC-Coveris</option>
+        <option>9900-Pac.Space SDP</option>
+        <option>9900-Packaging Personified SDP</option>
+        <option>9900-Paperworks Flexo SDP</option>
+        <option>9900-PCA Gravure</option>
+        <option>9900-PCA Litho (Keystone)</option>
+        <option>9900-PPL</option>
+        <option>9900-PRATT-Americraft pbg</option>
+        <option>9900-PRATT-Lewisburg pbg</option>
+        <option>9900-PRATT-LithoPress pbg</option>
+        <option>9900-PWI-Gallus-OPP</option>
+        <option>9900-Robbie Fantastico pbg</option>
+        <option>9900-Robinette pbg</option>
+        <option>9900-RT CCNB</option>
+        <option>9900-RT Marion- Burts Bees</option>
+        <option>9900-RT-SBS</option>
+        <option>9900-Smurfit-Litho-Sterling_pbg</option>
+        <option>9900-Sonoco Gravure pbg</option>
+        <option>9900-SPG Gravure (MYCK)-2</option>
+        <option>9900-SWOP</option>
+        <option>9900-Torham SBS pbg</option>
+        <option>9900-Utah Paper Box - GRACoL</option>
+      </select>
 
-  <h2 id="forms-controls-static">Static control</h2>
-  <p>When you need to place plain text next to a form label within a horizontal form, use the <code>.form-control-static</code> class on a <code>&lt;p&gt;</code>.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
-    <form class="form-horizontal" role="form">
-      <div class="form-group">
-        <label class="col-sm-2 control-label">Email</label>
-        <div class="col-sm-10">
-          <p class="form-control-static">email@example.com</p>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputPassword" class="col-sm-2 control-label">Password</label>
-        <div class="col-sm-10">
-          <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-        </div>
-      </div>
-    </form>
-  </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-horizontal"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"col-sm-2 control-label"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-control-static"</span><span class="nt">&gt;</span>email@example.com<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputPassword"</span> <span class="na">class=</span><span class="s">"col-sm-2 control-label"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputPassword"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/form&gt;</span></code></pre></div>
-
-  <h2 id="forms-control-focus">Input focus</h2>
-  <p>We remove the default <code>outline</code> styles on some form controls and apply a <code>box-shadow</code> in its place for <code>:focus</code>.</p>
-  <div class="bs-example">
-    <form role="form">
-      <input class="form-control" id="focusedInput" type="text" value="Demonstrative focus state">
-    </form>
-  </div>
-  <div class="bs-callout bs-callout-info">
-    <h4>Demo <code>:focus</code> state</h4>
-    <p>The above example input uses custom styles in our documentation to demonstrate the <code>:focus</code> state on a <code>.form-control</code>.</p>
-  </div>
-
-
-  <h2 id="forms-control-disabled">Disabled inputs</h2>
-  <p>Add the <code>disabled</code> boolean attribute on an input to prevent user input and trigger a slightly different look.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
-    <form role="form">
-      <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="">
-    </form>
-  </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"disabledInput"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Disabled input here..."</span> <span class="na">disabled</span><span class="nt">&gt;</span></code></pre></div>
-
-  <h3 id="forms-disabled-fieldsets">Disabled fieldsets</h3>
-  <p>Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all the controls within the <code>&lt;fieldset&gt;</code> at once.</p>
-
-  <div class="bs-callout bs-callout-warning">
-    <h4>Caveat about link functionality of <code>&lt;a&gt;</code></h4>
-    <p>Our styles use <code>pointer-events: none</code> to try to disable the link functionality of <code>&lt;a class="btn btn-*"&gt;</code> buttons in this case, but that CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 11. So to be safe, use custom JavaScript to disable such links.</p>
-  </div>
-
-  <div class="bs-callout bs-callout-danger">
-    <h4>Cross-browser compatibility</h4>
-    <p>While Bootstrap will apply these styles in all browsers, Internet Explorer 9 and below don't actually support the <code>disabled</code> attribute on a <code>&lt;fieldset&gt;</code>. Use custom JavaScript to disable the fieldset in these browsers.</p>
-  </div>
-
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
-    <form role="form">
-      <fieldset disabled="">
-        <div class="form-group">
-          <label for="disabledTextInput">Disabled input</label>
-          <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-        </div>
-        <div class="form-group">
-          <label for="disabledSelect">Disabled select menu</label>
-          <select id="disabledSelect" class="form-control">
-            <option>Disabled select</option>
-          </select>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"> Can't check this
-          </label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </fieldset>
-    </form>
-  </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;fieldset</span> <span class="na">disabled</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"disabledTextInput"</span><span class="nt">&gt;</span>Disabled input<span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"disabledTextInput"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Disabled input"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"disabledSelect"</span><span class="nt">&gt;</span>Disabled select menu<span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"disabledSelect"</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;option&gt;</span>Disabled select<span class="nt">&lt;/option&gt;</span>
-      <span class="nt">&lt;/select&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Can't check this
-      <span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/fieldset&gt;</span>
-<span class="nt">&lt;/form&gt;</span></code></pre></div>
-
-
-  <h2 id="forms-control-readonly">Readonly inputs</h2>
-  <p>Add the <code>readonly</code> boolean attribute on an input to prevent user input and style the input as disabled.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
-    <form role="form">
-      <input class="form-control" type="text" placeholder="Readonly input here…" readonly="">
-    </form>
-  </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Readonly input here…"</span> <span class="na">readonly</span><span class="nt">&gt;</span></code></pre></div>
-
-
-  <h2 id="forms-control-validation">Validation states</h2>
-  <p>Bootstrap includes validation styles for error, warning, and success states on form controls. To use, add <code>.has-warning</code>, <code>.has-error</code>, or <code>.has-success</code> to the parent element. Any <code>.control-label</code>, <code>.form-control</code>, and <code>.help-block</code> within that element will receive the validation styles.</p>
-
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
-    <form role="form">
-      <div class="form-group has-success">
-        <label class="control-label" for="inputSuccess1">Input with success</label>
-        <input type="text" class="form-control" id="inputSuccess1">
-      </div>
-      <div class="form-group has-warning">
-        <label class="control-label" for="inputWarning1">Input with warning</label>
-        <input type="text" class="form-control" id="inputWarning1">
-      </div>
-      <div class="form-group has-error">
-        <label class="control-label" for="inputError1">Input with error</label>
-        <input type="text" class="form-control" id="inputError1">
-      </div>
-      <div class="has-error">
-        <div class="radio">
-          <label class="checkbox">
-            <input type="checkbox" id="checkboxError" value="option1">
-            Option one is this and that—be sure to include why it's great
-          </label>
-        </div>
-      </div>
-      <div class="has-success">
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="radiosSuccess1" value="option1" checked="">
-            Option one is this and that—be sure to include why it's great
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="radiosSuccess2" value="option2">
-            Option two can be something else and selecting it will deselect option one
-          </label>
-        </div>
-      </div>
-    </form>
-  </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span> <span class="na">for=</span><span class="s">"inputSuccess1"</span><span class="nt">&gt;</span>Input with success<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputSuccess1"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-warning"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span> <span class="na">for=</span><span class="s">"inputWarning1"</span><span class="nt">&gt;</span>Input with warning<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputWarning1"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-error"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span> <span class="na">for=</span><span class="s">"inputError1"</span><span class="nt">&gt;</span>Input with error<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputError1"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"has-error"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkboxError"</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span>
-      Option one is this and that<span class="ni">&amp;mdash;</span>be sure to include why it's great
-    <span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"has-success"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optionsRadios"</span> <span class="na">id=</span><span class="s">"radiosSuccess1"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-      Option one is this and that<span class="ni">&amp;mdash;</span>be sure to include why it's great
-    <span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optionsRadios"</span> <span class="na">id=</span><span class="s">"radiosSuccess2"</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span>
-      Option two can be something else and selecting it will deselect option one
-    <span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-
-  <h3>With optional icons</h3>
-  <p>You can also add optional feedback icons with the addition of <code>.has-feedback</code> and the right icon.</p>
-  <p><strong class="text-danger">Feedback icons only work with textual <code>&lt;input class="form-control"&gt;</code> elements.</strong></p>
-  <div class="bs-callout bs-callout-warning">
-    <h4>Icons, labels, and input groups</h4>
-    <p>Manual positioning of feedback icons is required for inputs without a label and for <a href="../components#input-groups">input groups</a> with an add-on on the right. You are strongly encouraged to provide labels for all inputs for accessibility reasons. If you wish to prevent labels from being displayed, hide them with the <code>sr-only</code> class. If you must do without labels, adjust the <code>top</code> value of the feedback icon. For input groups, adjust the <code>right</code> value to an appropriate pixel value depending on the width of your addon.</p>
-  </div>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
-    <form role="form">
-      <div class="form-group has-success has-feedback">
-        <label class="control-label" for="inputSuccess2">Input with success</label>
-        <input type="text" class="form-control" id="inputSuccess2">
-        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
-      </div>
-      <div class="form-group has-warning has-feedback">
-        <label class="control-label" for="inputWarning2">Input with warning</label>
-        <input type="text" class="form-control" id="inputWarning2">
-        <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
-      </div>
-      <div class="form-group has-error has-feedback">
-        <label class="control-label" for="inputError2">Input with error</label>
-        <input type="text" class="form-control" id="inputError2">
-        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
-      </div>
-    </form>
-  </div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success has-feedback"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span> <span class="na">for=</span><span class="s">"inputSuccess2"</span><span class="nt">&gt;</span>Input with success<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputSuccess2"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-ok form-control-feedback"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-warning has-feedback"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span> <span class="na">for=</span><span class="s">"inputWarning2"</span><span class="nt">&gt;</span>Input with warning<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputWarning2"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-warning-sign form-control-feedback"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-error has-feedback"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span> <span class="na">for=</span><span class="s">"inputError2"</span><span class="nt">&gt;</span>Input with error<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputError2"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-remove form-control-feedback"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-
-  <h4>Optional icons in horizontal and inline forms</h4>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
-    <form class="form-horizontal" role="form">
-      <div class="form-group has-success has-feedback">
-        <label class="control-label col-sm-3" for="inputSuccess3">Input with success</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" id="inputSuccess3">
-          <span class="glyphicon glyphicon-ok form-control-feedback"></span>
-        </div>
-      </div>
-    </form>
-  </div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-horizontal"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success has-feedback"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label col-sm-3"</span> <span class="na">for=</span><span class="s">"inputSuccess3"</span><span class="nt">&gt;</span>Input with success<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputSuccess3"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-ok form-control-feedback"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/form&gt;</span></code></pre></div>
-
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
-    <form class="form-inline" role="form">
-      <div class="form-group has-success has-feedback">
-        <label class="control-label" for="inputSuccess4">Input with success</label>
-        <input type="text" class="form-control" id="inputSuccess4">
-        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
-      </div>
-    </form>
-  </div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success has-feedback"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span> <span class="na">for=</span><span class="s">"inputSuccess4"</span><span class="nt">&gt;</span>Input with success<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputSuccess4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-ok form-control-feedback"</span><span class="nt">&gt;&lt;/span&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/form&gt;</span></code></pre></div>
-
-  <h4>Optional icons with hidden <code>.sr-only</code> labels</h4>
-  <p>For form controls with no visible label, add the <code>.sr-only</code> class on the label. Bootstrap will automatically adjust the position of the icon once it's been added.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
-    <div class="form-group has-success has-feedback">
-      <label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
-      <input type="text" class="form-control" id="inputSuccess5">
-      <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+    <div class="row">  <!-- begin row 3 -->
+      <div class="col-xs-4">
+        <input type="text" class="form-control" placeholder="Printer Spec">
+      <select class="form-control">
+        <option>-- Select One Printer Spec --</option>      
+        <option>STP Black (Black)</option>
+      </select>
     </div>
+
+  <div class="col-xs-4">
+    <input type="text" class="form-control" placeholder="Engraver">
+      <select class="form-control">
+        <option>-- Select One Engraver --</option>      
+        <option>Albaad</option>
+        <option>American Fuji</option>
+        <option>Cosmolab</option>
+        <option>Imprimatur - Nypro Packaging</option>
+        <option>Jaly</option>
+        <option>Maxim Flexpac</option>
+        <option>MCC</option>
+        <option>Multicolor-Scottsburg</option>
+        <option>Vins Packaging</option>
+        <option>WRE</option>
+      </select>
   </div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success has-feedback"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label sr-only"</span> <span class="na">for=</span><span class="s">"inputSuccess5"</span><span class="nt">&gt;</span>Hidden label<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputSuccess5"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-ok form-control-feedback"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
+      <div class="col-xs-4">
+      <input type="text" class="form-control" placeholder="Print Method">
+      <select class="form-control">
+        <option>-- Select One Print Method --</option>      
+        <option>Digital</option>
+        <option>Dry Offset</option>
+        <option>Editorial</option>
+        <option>Flexo</option>
+        <option>Gravure</option>
+        <option>Heat Transfer</option>
+        <option>Litho</option>
+        <option>Screen Print</option>
+        <option>Template Job</option>
+      </select>
+    </div>
+  </div> <!-- end row 3 -->
 
-  <h2 id="forms-control-sizes">Control sizing</h2>
-  <p>Set heights using classes like <code>.input-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.</p>
-
-  <h3>Height sizing</h3>
-  <p>Create taller or shorter form controls that match button sizes.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example bs-example-control-sizing">
-    <form role="form">
-      <div class="controls">
-        <input class="form-control input-lg" type="text" placeholder=".input-lg">
-        <input type="text" class="form-control" placeholder="Default input">
-        <input class="form-control input-sm" type="text" placeholder=".input-sm">
-
-        <select class="form-control input-lg">
-          <option value="">.input-lg</option>
-        </select>
-        <select class="form-control">
-          <option value="">Default select</option>
-        </select>
-        <select class="form-control input-sm">
-          <option value="">.input-sm</option>
-        </select>
-      </div>
     </form>
-  </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control input-lg"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">".input-lg"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Default input"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control input-sm"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">".input-sm"</span><span class="nt">&gt;</span>
-
-<span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control input-lg"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/select&gt;</span>
-<span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/select&gt;</span>
-<span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control input-sm"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/select&gt;</span></code></pre></div>
-
-  <h3>Horizontal form group sizes</h3>
-  <p>Quickly size labels and form controls within <code>.form-horizontal</code> by adding <code>.form-group-lg</code> or <code>.form-group-sm</code>.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
-    <form class="form-horizontal" role="form">
-      <div class="form-group form-group-lg">
-        <label class="col-sm-2 control-label" for="formGroupInputLarge">Large label</label>
-        <div class="col-sm-10">
-          <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large input">
-        </div>
-      </div>
-      <div class="form-group form-group-sm">
-        <label class="col-sm-2 control-label" for="formGroupInputSmall">Small label</label>
-        <div class="col-sm-10">
-          <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
-        </div>
-      </div>
-    </form>
-  </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-horizontal"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-lg"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"col-sm-2 control-label"</span> <span class="na">for=</span><span class="s">"formGroupInputLarge"</span><span class="nt">&gt;</span>Large label<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"formGroupInputLarge"</span> <span class="na">placeholder=</span><span class="s">"Large input"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-sm"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"col-sm-2 control-label"</span> <span class="na">for=</span><span class="s">"formGroupInputSmall"</span><span class="nt">&gt;</span>Small label<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"formGroupInputSmall"</span> <span class="na">placeholder=</span><span class="s">"Small input"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/form&gt;</span></code></pre></div>
-
-
+  </div>
+  
   <h3>Column sizing</h3>
-  <p>Wrap inputs in grid columns, or any custom parent element, to easily enforce desired widths.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
+  <div class="zero-clipboard"></div><div class="bs-example">
     <form role="form">
       <div class="row">
+      
         <div class="col-xs-2">
           <input type="text" class="form-control" placeholder=".col-xs-2">
         </div>
@@ -774,32 +640,17 @@
         </div>
       </div>
     </form>
-  </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-2"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">".col-xs-2"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-3"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">".col-xs-3"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">".col-xs-4"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  </div>
 
-  <h2 id="forms-help-text">Help text</h2>
-  <p>Block level help text for form controls.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
-    <form role="form">
-      <input type="text" class="form-control">
-      <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-    </form>
-  </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>A block of help text that breaks onto a new line and may extend beyond one line.<span class="nt">&lt;/span&gt;</span></code></pre></div>
-</div>
-  
-  
-  
+  <div class="input-group">         
+    <input id="exampleInputEmailAddon" class="form-control" type="email" required >
+    <span class="form-highlight"></span>
+    <span class="form-bar"></span>
+    <label class="float-label" for="exampleInputEmailAddon">Float label with addon</label>
+  </div>
+
+
+
   
 </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
@@ -808,9 +659,6 @@
     
 
     <script src="js/index.js"></script>
-
-
-    
     
     
   </body>
