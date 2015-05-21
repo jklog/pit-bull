@@ -1,13 +1,14 @@
 /* -- import Bootstrap v3 --------------------------- */
+@import "https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic";
+/* -- import Bootstrap v3 --------------------------- */
 /* -- import Bootstrap docs ------------------------- */
 /* -- import Roboto Font ---------------------------- */
-@import "https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic";
 /* -- Body style ------------------------------------ */
 /* -- Input styles ---------------------------------- */
 .form-group {
   position: relative;
   margin-top: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .input-group {
   position: relative;
@@ -237,11 +238,11 @@ label {
   border-bottom: 4px solid #03a9f4;
   border-top: 1px solid rgba(0, 0, 0, 0);
   border-right: 1px solid rgba(0, 0, 0, 0);
-  -webkit-transform: rotate(-45deg) scaleY(0.5);
-  -moz-transform: rotate(-45deg) scaleY(0.5);
-  -ms-transform: rotate(-45deg) scaleY(0.5);
-  -o-transform: rotate(-45deg) scaleY(0.5);
-  transform: rotate(-45deg) scaleY(0.5);
+  -webkit-transform: rotate(-45deg) scaley(0.5);
+  -moz-transform: rotate(-45deg) scaley(0.5);
+  -ms-transform: rotate(-45deg) scaley(0.5);
+  -o-transform: rotate(-45deg) scaley(0.5);
+  transform: rotate(-45deg) scaley(0.5);
 }
 .checkbox .chk-span.checked {
   border-left-color: #03a9f4;
@@ -280,3 +281,5 @@ fieldset[disabled] .form-control {
   outline: 0;
   box-shadow: none;
 }
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
