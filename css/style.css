@@ -4,11 +4,20 @@
 /* -- import Bootstrap docs ------------------------- */
 /* -- import Roboto Font ---------------------------- */
 /* -- Body style ------------------------------------ */
+.container {
+  padding: 0;
+  margin: 30px;
+  margin-top: 35px;
+  max-width: 1280px;
+  width: 20%;
+  line-height: 10px;
+}
 /* -- Input styles ---------------------------------- */
 .form-group {
   position: relative;
   margin-top: 35px;
   margin-bottom: 0px;
+  margin-left: 30px;
 }
 .input-group {
   position: relative;
@@ -281,5 +290,3 @@ fieldset[disabled] .form-control {
   outline: 0;
   box-shadow: none;
 }
-
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
