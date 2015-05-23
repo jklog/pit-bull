@@ -1,8 +1,7 @@
 {
   "user":"bwu",
   "event":"create",
-  "template":[
-    {
+  "template":{
       "uuid":"0143bd2a-8397-42cf-b7eb-7f7e7bcc045d",
       "includeFiles": true,
       "includeFolders": true,
@@ -12,10 +11,8 @@
       "includeParameters": true,
       "includeInks": true,
       "includeCategories": true
-    }
-  ],
-  "job": [
-    {
+  },
+  "job":{
       "uuid":"",
       "customer": "11111",
       "jobNumber": "9141",
@@ -33,8 +30,7 @@
       "engraver": "WRE",
       "finalDeliverable": "Normalized PDF",
       "qaCheckList": "0"
-    }
-  ],
+  },
   "inks":[
     {"name":"Dieline","angle":"45","type":"Technical","method":"Litho"},
     {"name":"Varnish","angle":"45","type":"Varnish","method":"Litho"}
