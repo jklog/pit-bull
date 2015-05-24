@@ -12,7 +12,7 @@
       "includeInks": true,
       "includeCategories": true
   },
-  "job":{
+  "general":{
       "uuid":"",
       "customer": "11111",
       "jobNumber": "9141",
