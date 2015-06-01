@@ -1,0 +1,68 @@
+Pilot Evaluation Criteria
+	esko controlled
+		Jobname Format = "Job#_WO_Desc"?
+		Filename matches format of "_i01, _i02..." & Matches Revision# ?
+		Job Actor = Valid User?
+
+	i4jobs controlled
+		UPC & MAG & BWR = Input?
+		Hotfolder Exists in CAT3?
+		Revision# Exists? => Valid Version Criteria? 
+			IF i=current version, [next i !< i] -or-
+			[next i = i] -or-
+			[next i = i++]
+		Print Method is one of CAT1?
+		Final deliverable is one of CAT6?
+----------------------------------------------------------------------------------
+User Auth SPA / API
+	authentication via UID db
+	token via OAuth2 server	
+----------------------------------------------------------------------------------
+UI
+	AJAX dropdown population of LU values => Oris HF/Esko parameters
+	Validation of Input
+	Error Pages / Custom Msg
+	Snack Bars w/Feedback Option, Toast Messages
+	Storage of Logs => localstore db/file
+----------------------------------------------------------------------------------
+JSON to Esko
+	UUID Key Queries
+	Serialization as JSON => use League\Fractal\Manager => 'visible-or-hidden' attributes => single resource/resource collection
+
+	Interface w/Esko
+	=> POST JSON request to ESKO Jar
+	=> Event response from ESKO => success='uuid'; failure='error msg'
+	IF 'success'; STORE POST data & 'uuid', RETURN 200 OK
+	IF 'failure'; READ Error msg
+----------------------------------------------------------------------------------
+Spec to Vendor Engine
+	UI is a Wizard
+	Vendor / Method / Hotfolder Filter
+	Relationship Logic
+----------------------------------------------------------------------------------
+Select
+	Printer Name => filters method(s) related to Printer => AJAX LU dropdown, i4jobs qry
+		SELECT `printerName` FROM `i4jobs.es_printer` WHERE `i4jobs.id_es_printer`= `dropdown.fieldname`
+
+	Print Method => filters Hot Folder(s) related to Printer => AJAX LU dropdown, Oris qry
+		SELECT `ps_print_method` FROM `i4jobs.ps_printer_specs` WHERE `i4jobs.id_ps`= `dropdown.fieldname`
+
+	Hot Folder => multiple hotfolders per device (7900 or 9900) => AJAX LU dropdown, Oris qry
+		SELECT `printqueName` FROM `i4jobs.es_printque` WHERE `i4jobs.id_es_printque` LIKE `dropdown.fieldname %`
+
+	Final Format => one format per printer, assume Normalized PDF => AJAX LU dropdown, i4jobs qry
+		SELECT `deliverableName` FROM `i4jobs.es_deliverable` WHERE `i4jobs.id_es_deliverable` LIKE `dropdown.fieldname %`
+
+	UPC => one per layout, possible multiple layouts per job => one upc per job => AJAX LU dropdown, i4jobs qry
+		SELECT `barcodeType` FROM `i4jobs.es_barcode_types` WHERE `i4jobs.id_es_barcode_types` = `dropdown.fieldname`
+
+	Engraver => none, or one per layout => AJAX LU dropdown, i4jobs qry
+		SELECT `engraverName` FROM `i4jobs.es_engraver` WHERE `i4jobs.id_es_engraver` = `dropdown.fieldname`
+----------------------------------------------------------------------------------
+barcodes.php
+	DNS1D => upc, ean, itf-14
+----------------------------------------------------------------------------------
+Dev Workflow
+	GitHub Account
+	CI Server
+	Yo, Grunt, NPM
